@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import UserCard from "./components/UserCard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const users = [
+		{
+			name: "Emma Watson",
+			nickName: "@EmWatson",
+			img: {
+				src: "https://oboi-telefon.ru/wallpapers/12073/35005.jpg",
+				alt: "Emma Watson photo",
+			},
+			tweets: 1.337,
+			fallowing: 561,
+			followers: 718,
+      gender: 'female',
+		},
+		{
+			name: "Daniel Radcliffe",
+			nickName: "@DanRadcl",
+			img: {
+				src: "https://dnepr.info/wp-content/uploads/2022/05/250631.700xp.jpg",
+				alt: "Daniel Radcliffe photo",
+			},
+			tweets: 1.658,
+			fallowing: 3861,
+			followers: 5678,
+      gender: 'male',
+		},
+	];
+
+	return (
+		<div className="container">
+			<div className="wrapper">
+				<UserCard props={users[0]} />
+				<UserCard props={users[1]} />
+				<UserCard props={users[1]} />
+				<UserCard props={users[1]} />
+				<UserCard props={users[1]} />
+				<UserCard props={users[1]} />
+				<UserCard props={users[1]} />
+				<UserCard props={users[1]} />
+			</div>
+		</div>
+	);
 }
 
 export default App;
