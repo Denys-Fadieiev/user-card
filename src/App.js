@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.module.css";
 import UserCard from "./components/UserCard";
 
 function App() {
@@ -30,16 +30,16 @@ function App() {
 	];
 
 	return (
-		<div className="container">
-			<div className="wrapper">
-				<UserCard props={users[0]} />
-				<UserCard props={users[1]} />
-				<UserCard props={users[1]} />
-				<UserCard props={users[1]} />
-				<UserCard props={users[1]} />
-				<UserCard props={users[1]} />
-				<UserCard props={users[1]} />
-				<UserCard props={users[1]} />
+		<div className={styles.container}>
+			<div className={styles.wrapper}>
+				<UserCard users={users[0]} />
+				<UserCard users={users[1]} />
+				<UserCard users={users[1]} />
+				<UserCard users={users[1]} />
+				<UserCard users={users[1]} />
+				<UserCard users={users[1]} />
+				<UserCard users={users[1]} />
+				<UserCard users={users[1]} />
 			</div>
 		</div>
 	);

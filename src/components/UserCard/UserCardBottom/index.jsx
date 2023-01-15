@@ -8,16 +8,16 @@ const UserCardBottom = (props) => {
     <div>
       <div className={styles.wrapperDesc}>
         <div >
-          <h5>Tweets</h5>
-          <p>{tweets}</p>
+          <p className={styles.subtitle}>Tweets</p>
+          <p className={styles.text}> {tweets}</p>
         </div>
         <div>
-          <h5>Fallowing</h5>
-          <p>{fallowing}</p>
+          <p className={styles.subtitle}>Fallowing</p>
+          <p className={styles.text}>{fallowing}</p>
         </div>
         <div>
-          <h5>Followers</h5>
-          <p>{followers}</p>
+          <p className={styles.subtitle}>Followers</p>
+          <p className={styles.text}>{followers}</p>
         </div>
       </div>
     </div>

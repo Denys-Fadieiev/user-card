@@ -1,0 +1,13 @@
+.container{
+  background: rgb(228, 226, 226);
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 0;
+} 

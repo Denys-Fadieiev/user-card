@@ -20,9 +20,9 @@ const femaleStylesBtn = {
   background: 'linear-gradient(rgb(246, 78, 6), rgb(232, 124, 223))',
 };
 
-const UserCard = ({props}) => {
-  const {name, nickName, img, tweets, fallowing, followers, gender} = props;
-  
+const UserCard = (props) => {
+  const { users }= props;
+  const { name, nickName, img, tweets, fallowing, followers, gender } = users;  
   return (
     <article 
       className={styles.wrapperCard} 

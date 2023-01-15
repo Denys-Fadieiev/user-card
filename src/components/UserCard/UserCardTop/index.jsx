@@ -12,8 +12,8 @@ const UserCardTop = (props) => {
         src={src} 
         alt={alt} />
       <div className={styles.wrapperItem}>
-        <h2>{name}</h2>
-        <h4>{nickName}</h4>
+        <h2 className={styles.name}>{name}</h2>
+        <h4 className={styles.nickName}>{nickName}</h4>
       </div>
     </div>
   );
